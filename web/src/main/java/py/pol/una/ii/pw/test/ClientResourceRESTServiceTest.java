@@ -8,16 +8,20 @@ import io.restassured.matcher.RestAssuredMatchers.*;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
+/**
+ * @author gerardo
+ *
+ */
 public class ClientResourceRESTServiceTest {
 	
 
-	@Test
+	/*@Test
 	public final void testListAllClients() {
         given().when().get("http://localhost:8081/EjbJaxRS-web/rest/clientes/").then()
         .body("nombre", Matchers.contains(Matchers.equalTo("Jose")));
         
         
-	}
+	}*/
 
 //	@Test
 //	public final void testLookupClientById() {
