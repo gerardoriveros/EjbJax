@@ -49,6 +49,13 @@
          <type>ejb</type>
          <scope>provided</scope>
       </dependency>
+      
+      	<!-- https://mvnrepository.com/artifact/javax.ejb/ejb-api -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+		</dependency>
 
       <!-- Import the JAX-RS API, we use provided scope as the API is included in JBoss AS 7 -->
       <dependency>
@@ -120,14 +127,8 @@
        </dependency>
        
         <!-- testing -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            
-        </dependency>
-        
-        <dependency>
+        <!-- Esta libreria voy a usar para mis tests -->
+		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>3.0.3</version>
@@ -155,7 +156,14 @@
 			<artifactId>groovy-all</artifactId>
 			<version>2.4.9</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+        
+       
   
   	</dependencies>
 
