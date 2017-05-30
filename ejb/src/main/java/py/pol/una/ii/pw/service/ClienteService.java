@@ -38,7 +38,6 @@ public class ClienteService {
 		  }
 		 }
 	
-	
 	@TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
 	public void createCliente(Cliente cliente){
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();

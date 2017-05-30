@@ -48,7 +48,6 @@ public class CompraResourceRESTService {
 	        return compra;
 	    }
 	    
-	   
 	    @POST
 	    @Path("/nueva")
 	    @Consumes(MediaType.APPLICATION_JSON)

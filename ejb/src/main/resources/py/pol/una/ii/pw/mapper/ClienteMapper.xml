@@ -10,7 +10,7 @@
   </select>
   
   <select id="selectClienteById" parameterType="int" resultType="py.pol.una.ii.pw.model.Cliente">
-  	select * from cliente where id_cliente = #{id}	
+  	select * from cliente where id_cliente = #{id}
   </select>
 
    <insert id='insertCliente' parameterType='py.pol.una.ii.pw.model.Cliente' 

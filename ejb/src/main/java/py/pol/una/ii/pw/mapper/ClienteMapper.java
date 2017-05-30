@@ -7,7 +7,6 @@ import py.pol.una.ii.pw.model.Cliente;
 public interface ClienteMapper {
 	
 	public Cliente selectClienteById(int id);
-	public Cliente selectClienteByName(String nombre);
 
 	public List<Cliente> getAllCliente();
 	

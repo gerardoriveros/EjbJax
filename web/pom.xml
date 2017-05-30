@@ -38,7 +38,6 @@
          <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
       </license>
    </licenses>
-   
 
    <dependencies>
 
@@ -49,13 +48,6 @@
          <type>ejb</type>
          <scope>provided</scope>
       </dependency>
-      
-      	<!-- https://mvnrepository.com/artifact/javax.ejb/ejb-api -->
-		<dependency>
-			<groupId>javax.ejb</groupId>
-			<artifactId>ejb-api</artifactId>
-			<version>3.0</version>
-		</dependency>
 
       <!-- Import the JAX-RS API, we use provided scope as the API is included in JBoss AS 7 -->
       <dependency>
@@ -126,14 +118,33 @@
            <scope>provided</scope>
        </dependency>
        
-        <!-- testing -->
-        <!-- Esta libreria voy a usar para mis tests -->
+       <dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>3.0.3</version>
+		</dependency>
 		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+<dependency>
+    <groupId>com.jayway.restassured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>2.9.0</version>
+</dependency>
+		
+
+
+<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>3.0.3</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-all</artifactId>
@@ -156,16 +167,32 @@
 			<artifactId>groovy-all</artifactId>
 			<version>2.4.9</version>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-        
-       
-  
-  	</dependencies>
+	 <dependency>
+            <groupId>org.jboss.arquillian</groupId>
+            <artifactId>arquillian-bom</artifactId>
+            <version>1.1.13.Final</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+    <groupId>org.jboss.arquillian.junit</groupId>
+    <artifactId>arquillian-junit-container</artifactId>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+     <groupId>javax.servlet</groupId>
+     <artifactId>javax.servlet-api</artifactId>
+     <version>3.0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.jayway.jsonpath</groupId>
+    <artifactId>json-path-assert</artifactId>
+    <version>0.8.1</version>
+    <scope>test</scope>
+</dependency>
+
+   </dependencies>
 
    <build>
       <finalName>${project.artifactId}</finalName>
