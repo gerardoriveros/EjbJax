@@ -65,7 +65,7 @@ public class ClientResourceRESTServiceTest {
 	
 	@Test
 	public final void testDeleteClient() {
-		Map<String,String> client = new HashMap<String, String>();
+		/*Map<String,String> client = new HashMap<String, String>();
 		 client.put("id_cliente", "666");
       
         given()
@@ -76,7 +76,7 @@ public class ClientResourceRESTServiceTest {
         .then()
         .statusCode(200);  
         
-        System.out.println("4 ...");
+        System.out.println("4 ...");*/
         
 	}
 	
