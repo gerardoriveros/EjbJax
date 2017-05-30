@@ -38,7 +38,8 @@ public class ClientResourceRESTServiceTest {
     	.then()
     	.statusCode(200)
     	.body("id_cliente", equalTo(1));
-		System.out.println("2 ...");
+		
+	
 	}
 
 	@Test
