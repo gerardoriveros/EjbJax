@@ -41,24 +41,14 @@
 
     <dependencies>
 
-        <!-- Declare the APIs we depend on and need for compilation. All of 
-            them are provided by JBoss AS 7 -->
-		
-	
-		
-		<!-- https://mvnrepository.com/artifact/io.rest-assured.examples/rest-assured-itest-java -->
 
-		
-				
-		
-		
+
         <!-- Import the EJB API, we use provided scope as the API is included in JBoss AS 7 -->
         <dependency>
             <groupId>org.jboss.spec.javax.ejb</groupId>
             <artifactId>jboss-ejb-api_3.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-        
 
         <!-- Import the CDI API, we use provided scope as the API is included in JBoss AS 7 -->
         <dependency>
@@ -84,14 +74,8 @@
     <version>1.2-b02</version>
 </dependency>
 
+
 <!--JTA -->
-		<dependency>
-			<groupId>javax.transaction</groupId>
-			<artifactId>javax.transaction-api</artifactId>
-			<version>1.2</version>
-		</dependency>
-		
-		<!--JTA -->
 		<dependency>
 			<groupId>javax.transaction</groupId>
 			<artifactId>javax.transaction-api</artifactId>
@@ -155,7 +139,6 @@
 			<version>3.0.3</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-all</artifactId>
@@ -184,11 +167,20 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-path</artifactId>
-			<version>3.0.3</version>
-		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-all</artifactId>
+    <version>1.9.5</version>
+</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/spring-mock-mvc -->
+<dependency>
+    <groupId>com.jayway.restassured</groupId>
+    <artifactId>spring-mock-mvc</artifactId>
+    <version>2.9.0</version>
+</dependency>
 		
 
     </dependencies>
