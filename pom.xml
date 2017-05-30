@@ -138,8 +138,7 @@
                     <version>${version.jboss.maven.plugin}</version>
                     <inherited>true</inherited>
                     <configuration>
-                         <!-- <skip>true</skip> -->
-                        	<username>admin</username>
+                        <username>admin</username>
                         	<password>admin</password> 
                     </configuration>
                 </plugin>

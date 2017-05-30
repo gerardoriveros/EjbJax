@@ -18,16 +18,11 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import py.pol.una.ii.pw.model.Cliente;
 import py.pol.una.ii.pw.service.ClienteService;
 
 @Path("/clientes")
 @RequestScoped
-@RestController
 public class ClienteResourceRESTService {
 	
 	@Inject
@@ -35,7 +30,6 @@ public class ClienteResourceRESTService {
 	
 	@GET
     @Produces(MediaType.APPLICATION_JSON)
-	@RequestMapping("/clientes")
     public List<Cliente> listAllClientes()
 	{
 		

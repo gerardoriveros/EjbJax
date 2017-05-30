@@ -2,22 +2,24 @@ package py.pol.una.ii.pw.model;
 
 import java.io.Serializable;
 
-public class Cliente implements Serializable {
+public class Proveedor implements Serializable {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = -5721193536209413888L;
-	private Integer id_cliente;
+	private static final long serialVersionUID = -9018991189442878104L;
+	/** Default value included to remove warning. Remove or modify at will. **/
+    
+
+  
+    private Long id_proveedor;
     private String ruc;
     private String nombre;
     private String telefono;
-    private Float saldo;
-    
-	public Integer getId_cliente() {
-		return id_cliente;
+	public Long getId_proveedor() {
+		return id_proveedor;
 	}
-	public void setId_cliente(Integer id_cliente) {
-		this.id_cliente = id_cliente;
+	public void setId_proveedor(Long id_proveedor) {
+		this.id_proveedor = id_proveedor;
 	}
 	public String getRuc() {
 		return ruc;
@@ -37,16 +39,6 @@ public class Cliente implements Serializable {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public Float getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(Float saldo) {
-		this.saldo = saldo;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
     
     
-
 }
