@@ -41,8 +41,12 @@
 
     <dependencies>
 
-        <!-- Declare the APIs we depend on and need for compilation. All of 
-            them are provided by JBoss AS 7 -->
+              <!-- https://mvnrepository.com/artifact/org.wildfly.bom/wildfly-javaee7 -->
+<dependency>
+    <groupId>org.wildfly.bom</groupId>
+    <artifactId>wildfly-javaee7</artifactId>
+    <version>10.0.1.Final</version>
+</dependency>
 
         <!-- Import the EJB API, we use provided scope as the API is included in JBoss AS 7 -->
         <dependency>
